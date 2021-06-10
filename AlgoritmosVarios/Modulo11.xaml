@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlgoritmosVarios.Modulo11">
+    <ScrollView HeightRequest="3000">
+        <StackLayout Padding="15">
+            <Frame BorderColor="Black" VerticalOptions="Start" HorizontalOptions="Center">
+                <Label FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Text="Calculadora de Digito Verificador Modulo11(código de control, 9 dígitos)"/>
+            </Frame>
+
+            <Label Text="Ingrese el numero" FontSize="Body" HorizontalOptions="Fill" ScaleX=".98"/>
+            <Entry x:Name="inMod11" Keyboard="Numeric"/>
+            <Button Text="Calcular" Clicked="CalculaButton_Clicked"  VerticalOptions="EndAndExpand"/>
+
+            <Label Text="Actual" FontSize="Small" HorizontalOptions="Fill" ScaleX=".98"/>
+            <Frame BorderColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Editor x:Name="outMod11Actual" IsEnabled="False" VerticalOptions="Center" HorizontalOptions="Center" AutoSize="TextChanges"/>
+            </Frame>
+
+            <Label Text="Historial" FontSize="Small" HorizontalOptions="Fill" ScaleX=".98"/>
+            <Frame BorderColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Editor x:Name="outMod11History" IsEnabled="False" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" AutoSize="TextChanges"/>
+            </Frame>
+
+            <Button Text="Información (10 digitos)" Clicked="InfoButton_Clicked"  VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

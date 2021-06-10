@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlgoritmosVarios.Adler32">
+    <ScrollView HeightRequest="3000">
+        <StackLayout Padding="15">
+            <Frame BorderColor="Black" VerticalOptions="Start" HorizontalOptions="Center">
+                <Label FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Text="Calculadora de Hash Adler32"/>
+            </Frame>
+            
+            <Label Text="Ingrese el texto a codificaar" FontSize="Body" HorizontalOptions="Fill" ScaleX=".98"/>
+            <Entry x:Name="inAdler" />
+            <Button Text="Calcular" Clicked="CalculaButton_Clicked"  VerticalOptions="EndAndExpand"/>
+
+            <Label Text="Actual" FontSize="Small" HorizontalOptions="Fill" ScaleX=".98"/>
+            <Frame BorderColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Editor x:Name="outAdlerActual" IsEnabled="False" VerticalOptions="Center" HorizontalOptions="Center" AutoSize="TextChanges"/>
+            </Frame>
+            
+            <Label Text="Historial" FontSize="Small" HorizontalOptions="Fill" ScaleX=".98"/>
+            <Frame BorderColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Editor x:Name="outAdlerHistory" IsEnabled="False" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" AutoSize="TextChanges"/>
+            </Frame>
+                       
+            <Button Text="Información" Clicked="InfoButton_Clicked"  VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

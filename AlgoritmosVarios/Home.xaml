@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlgoritmosVarios.Home" >
+    <ScrollView HeightRequest="3000">
+        <StackLayout >
+            <Frame BorderColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+                <Image Source="negro.png" HeightRequest="100"/>
+            </Frame>
+            <Label Text="App by Silvia Cano and Josue Delgadillo" FontSize="Small" HorizontalOptions="End" 
+                   VerticalOptions="End" ScaleX=".98"/>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

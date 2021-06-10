@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:algoritmosvarios="clr-namespace:AlgoritmosVarios"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="AlgoritmosVarios.MenuPestanas">
+  <!--Pages can be added as references or inline-->
+    <algoritmosvarios:Home Title="Home" IconImageSource="home.png"></algoritmosvarios:Home>
+    <algoritmosvarios:Adler32 Title="Adler32" IconImageSource="adler.png"></algoritmosvarios:Adler32>
+    <algoritmosvarios:Modulo11 Title="Modulo11" IconImageSource="m11.png"></algoritmosvarios:Modulo11>
+    <algoritmosvarios:ISBN10 Title="ISBN10" IconImageSource="isbn10.png"></algoritmosvarios:ISBN10>
+</TabbedPage>
